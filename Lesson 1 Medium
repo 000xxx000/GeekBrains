@@ -1,0 +1,15 @@
+# ===========Задача 1===========
+# while True:
+#   user_var = int(input('Введите число от 0 до 10: '))
+#   if user_var >= 0 and user_var <= 10:
+#       print(user_var ** 2)
+#       break
+#   else:
+#       print('Вы ввели неверное число')
+
+# ===========Задача 2===========
+user_var1 = input('Введите первую переменную: ')
+user_var2 = input('Введите вторую переменную: ')
+user_var1, user_var2 = user_var2, user_var1
+print('Первая переменная: ', user_var1)
+print('Вторая переменная', user_var2)

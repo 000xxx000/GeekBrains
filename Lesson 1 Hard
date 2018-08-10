@@ -1,0 +1,16 @@
+print('Вас приветствует программа "Медицинская анкета"!')
+print('Пожалуйста, введите свои данные')
+user_name = input('Введите Ваше имя: ')
+user_surname = input('Введите Вашу фамилию: ')
+user_age = int(input('Введите свой возраст: '))
+user_weight = int(input('Введите свой вес: '))
+user_health = ''
+if 30 < user_age <= 40 and (user_weight < 50 or user_weight > 120):
+    user_health = 'следует заняться собой'
+elif user_age > 40 and (user_weight < 50 or user_weight > 120):
+    user_health = 'следует обратиться к врачу!'
+else:
+    user_health = 'хорошее состояние'
+
+
+print (user_name, user_surname, user_age, 'лет,', user_weight, 'кг,', user_health)
